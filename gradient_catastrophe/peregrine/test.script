@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+X=1
+while [ $X -le 3 ]
+do
+  echo $X
+  export RUN="$X"
+  matlab -nodesktop -nojvm -nosplash -r NLS_UQ
+  X=$((X+1))
+done      

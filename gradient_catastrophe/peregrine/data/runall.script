@@ -1,0 +1,13 @@
+#!/bin/bash 
+cd $HOME/UQ_test
+
+X=1
+while [ $X -le 20 ]
+do
+  echo $X
+  export RUN="$X"
+  qsub -v RUN run.script
+  X=$((X+1))
+done       
+
+

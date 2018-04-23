@@ -1,0 +1,17 @@
+# This job needs 1 compute node with 1 processor per node.
+#PBS -l nodes=1:ppn=1
+# It should be allowed to run for up to 24 hours.
+#PBS -l walltime=24:00:00
+# Name of job.
+#PBS -N myjob
+# Join STDERR TO STDOUT.  (omit this if you want separate STDOUT AND STDERR)
+#PBS -j oe
+# Send me mail on job start, job end and if job aborts
+# first line declares the email address i want
+# second one says email at beginning, end, and if job aborts (b, e, a)
+#PBS -M andy@andyreagan.com
+#PBS -m bea
+
+cd /users/a/r/areagan/rogue/
+
+matlab -nojvm -nosplash -r p3_peregrine_5_e
