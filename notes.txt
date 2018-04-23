@@ -1,0 +1,42 @@
+plot it as a branching network
+
+"depth" -morgan
+
+not strictly a tree structure
+
+representative of the cognitive arrangement of math guys, historical as well
+
+
+optimize the proof any theorem by reducing path length
+organize things so that optimizes direct reliance
+
+
+could we make this "linear"
+
+path length... longest path length is interesting here
+
+bipartitite search...removing and adding edges to affect
+
+henning metric for comparison
+
+definition => ontology of logic
+
+
+
+
+training a bot to understand math bot
+
+
+
+casos automap
+
+
+
+
+
+next steps:
+-make histograms of degree dist
+
+
+
+

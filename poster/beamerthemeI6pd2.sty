@@ -1,0 +1,202 @@
+\ProvidesPackage{beamerthemeI6pd2}  % this style was created by Thomas Deselaers an Philippe Dreuw
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{tangocolors}
+\selectcolormodel{cmyk}
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{uvmgreen}{cmyk}{0.77, 0, 0.26, 0.50}
+%\definecolor{mylightblue}{cmyk}{1, .6, .1, .0}
+\definecolor{mynicelightblue}{RGB}{51,102,255}
+\definecolor{mylightblue}{RGB}{77, 84, 216}
+\definecolor{notmylightblue}{RGB}{109, 99, 150}
+\definecolor{myblue}{cmyk}{.8588, .8136, 0, .3059}
+\definecolor{mydarkblue}{cmyk}{0.9304, 0.8783, 0, .5490}
+\definecolor{myorange}{cmyk}{0.9304, 0.8783, 0, .5490}
+
+
+%\setbeamercolor{headline}{fg=tabutter,bg=black}
+\setbeamercolor{headline}{fg=white,bg=mydarkblue} %%TITLE
+\setbeamercolor{footline}{fg=white, bg=white}
+\setbeamerfont{footline}{size=\large,series=\tt}
+\setbeamercolor{separation line}{bg=white}
+\setbeamercolor{title in headline}{fg=white} %%
+\setbeamercolor{author in headline}{fg=white}%%
+\setbeamercolor{institute in headline}{fg=white}%%
+
+\setbeamercolor{framesubtitle}{fg=white, bg=mydarkblue}
+\setbeamercolor{author in head/foot}{fg=white, bg=myorange}
+\setbeamercolor{title in head/foot}{fg=white, bg=white}
+
+\setbeamercolor*{normal text}{fg=white, bg=mynicelightblue} %%BIG BACKGROUND
+\setbeamercolor*{block body}{bg=white,fg=black}
+\setbeamercolor*{block title}{fg=white,bg=mydarkblue} %%FONT, BLOCK TITLE
+\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamercolor{upper separation line head}{fg=green}
+
+%\setbeamercolor*{example body}{fg=ta3aluminium,bg=black}
+%\setbeamercolor*{example text}{fg=ta3aluminium,bg=black}
+%\setbeamercolor*{example title}{bg=taorange,fg=ta2gray}
+\setbeamercolor*{example body}{fg=black,bg=white}
+\setbeamercolor*{example text}{fg=black,bg=white}
+\setbeamercolor*{example title}{fg=black,bg=white}
+
+\setbeamercolor{alerted text}{fg=white}
+
+%\setbeamercolor{example text}{fg=taorange}
+\setbeamercolor{structure}{fg=black}	%ends up as bib text color
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+%\setbeamertemplate{bibliography item}[article]
+\setbeamertemplate{bibliography item}[text]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setbeamercolor{headline}{fg=tabutter,bg=black}
+%\setbeamercolor{footline}{fg=tabutter, bg=ta3gray}
+%\setbeamerfont{footline}{size=\large,series=\tt}
+%\setbeamercolor{separation line}{bg=ta2orange}
+%\setbeamercolor{title in headline}{fg=tabutter}
+%\setbeamercolor{author in headline}{fg=ta2orange}
+%\setbeamercolor{institute in headline}{fg=ta3orange}
+%
+%\setbeamercolor{framesubtitle}{fg=ta3orange, bg=ta2gray}
+%\setbeamercolor{author in head/foot}{fg=ta2orange, bg=black}
+%\setbeamercolor{title in head/foot}{fg=ta2orange, bg=black}
+%
+%\setbeamercolor*{normal text}{fg=tachameleon, bg=white}
+%\setbeamercolor*{block body}{bg=ta3aluminium,fg=black}
+%\setbeamercolor*{block title}{fg=taorange,bg=ta2gray}
+%\setbeamerfont{block title}{size=\large,series=\bf}
+%\setbeamercolor{upper separation line head}{fg=ta2orange}
+%
+%\setbeamercolor*{example body}{fg=ta3aluminium,bg=white}
+%\setbeamercolor*{example text}{fg=ta3aluminium,bg=black}
+%\setbeamercolor*{example title}{bg=taorange,fg=ta2gray}
+%
+%%\setbeamercolor{alerted text}{fg=ta3gray}
+%
+%%\setbeamercolor{example text}{fg=taorange}
+%\setbeamercolor{structure}{fg=ta3skyblue}
+%
+%\setbeamertemplate{itemize items}[triangle]
+%\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[ht=3.5ex,dp=0.5ex,center,leftskip=-1em,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}%
+    {\phantom{Gg}\insertblocktitle}% phantom because of baseline problem
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[leftskip=1em,colsep*=.75ex,sep=0.5ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{  
+  \leavevmode
+
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+    \begin{columns}[T]
+      \begin{column}{.02\paperwidth}
+      \end{column}
+      \begin{column}{.05\paperwidth}
+        \vskip8ex
+        \begin{center}
+%          \includegraphics[width=.95\linewidth]{logo_CSC_logo_cropped-tp.pdf}
+        \end{center}
+        \vskip2ex
+      \end{column}
+
+      \begin{column}{.85\paperwidth}
+        \vskip4ex
+        \raggedleft
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+        \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
+        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+      \end{column}
+      \begin{column}{.05\paperwidth}
+        \vskip8ex
+        \begin{center}
+ %         \includegraphics[width=.95\linewidth]{logo_VACC_logo_huge-tp.pdf}
+        \end{center}
+        \vskip2ex
+      \end{column}
+      \begin{column}{.02\paperwidth}
+      \end{column}
+    \end{columns}
+    \vskip2ex
+  \end{beamercolorbox}
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+    \rule{0pt}{3pt}
+  \end{beamercolorbox}
+}
+
+%  \setbeamertemplate{headline}{  
+%    \leavevmode
+%    \begin{beamercolorbox}[sep=0.5cm,wd=.8\paperwidth]{headline}
+%      \usebeamercolor{title in headline}{\raggedleft\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+%      \usebeamercolor{author in headline}{\raggedleft\color{fg}\large{\insertauthor}\\[1ex]}
+%      \usebeamercolor{institute in headline}{\raggedleft\color{fg}\large{\insertinstitute}\\[1ex]}     
+%    \end{beamercolorbox}%
+%    \begin{beamercolorbox}[wd=.2\paperwidth]{logo in headline}
+%      \centering
+%      \LARGE{LOGO}
+%    \end{beamercolorbox}  
+
+
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+    \rule{0pt}{3pt}
+  \end{beamercolorbox}
+  
+  \leavevmode%
+  \begin{beamercolorbox}[ht=4ex,leftskip=1em,rightskip=1em]{author in head/foot}%
+   % \texttt{http://www-i6.informatik.rwth-aachen.de}
+    \hfill
+   % \texttt{<surname>@cs.rwth-aachen.de}
+    \vskip1ex
+  \end{beamercolorbox}
+  \vskip0pt%
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+    \rule{0pt}{3pt}
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Display a grid to help align images ... and it looks nice with this color scheme
+%\beamertemplategridbackground[1cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+% adapt height of imtemize rectangles
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{itemize item}{\raisebox{0.12ex}{$\blacktriangleright$}\hskip0.1em}
+\setbeamertemplate{itemize subitem}{\raisebox{0.12ex}{$\triangleright$}\hskip0.1em}
+% or define your own template using \defbeamertemplate{itemize item}, see beameruserguide.pdf
+
+% equal font sizes for all levels
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subsubbody}{size=\normalsize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster-surf"
+%%% End: 

@@ -1,0 +1,172 @@
+% this style was created by Philippe Dreuw and Thomas Deselaers
+\ProvidesPackage{beamerthemeChris} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\RequirePackage{tangocolors}
+\selectcolormodel{cmyk}
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{uvmgreen}{cmyk}{0.77, 0, 0.26, 0.50}
+%\definecolor{mylightblue}{cmyk}{1, .6, .1, .0}
+\definecolor{mynicelightblue}{RGB}{25, 49, 255}
+\definecolor{mylightblue}{RGB}{77, 84, 216}
+\definecolor{notmylightblue}{RGB}{109, 99, 150}
+\definecolor{myblue}{cmyk}{.8588, .8136, 0, .3059}
+\definecolor{mydarkblue}{cmyk}{0.9304, 0.8783, 0, .5490}
+\definecolor{myorange}{cmyk}{0.9304, 0.8783, 0, .5490}
+
+
+%\setbeamercolor{headline}{fg=tabutter,bg=black}
+\setbeamercolor{headline}{fg=white,bg=mydarkblue} %%TITLE
+\setbeamercolor{footline}{fg=white, bg=white}
+\setbeamerfont{footline}{size=\large,series=\tt}
+\setbeamercolor{separation line}{bg=white}
+\setbeamercolor{title in headline}{fg=white} %%
+\setbeamercolor{author in headline}{fg=white}%%
+\setbeamercolor{institute in headline}{fg=white}%%
+
+\setbeamercolor{framesubtitle}{fg=white, bg=mydarkblue}
+\setbeamercolor{author in head/foot}{fg=white, bg=myorange}
+\setbeamercolor{title in head/foot}{fg=white, bg=white}
+
+\setbeamercolor*{normal text}{fg=white, bg=mynicelightblue} %%BIG BACKGROUND
+\setbeamercolor*{block body}{bg=white,fg=black}
+\setbeamercolor*{block title}{fg=white,bg=mydarkblue} %%FONT, BLOCK TITLE
+\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamercolor{upper separation line head}{fg=green}
+
+%\setbeamercolor*{example body}{fg=ta3aluminium,bg=black}
+%\setbeamercolor*{example text}{fg=ta3aluminium,bg=black}
+%\setbeamercolor*{example title}{bg=taorange,fg=ta2gray}
+\setbeamercolor*{example body}{fg=black,bg=white}
+\setbeamercolor*{example text}{fg=black,bg=white}
+\setbeamercolor*{example title}{fg=black,bg=white}
+
+\setbeamercolor{alerted text}{fg=white}
+
+%\setbeamercolor{example text}{fg=taorange}
+\setbeamercolor{structure}{fg=black}	%ends up as bib text color
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+%\setbeamertemplate{bibliography item}[article]
+\setbeamertemplate{bibliography item}[text]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{block begin}{
+  \vskip.75ex
+  \begin{beamercolorbox}[rounded=true,shadow=true,leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}\insertblocktitle
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=.75ex,sep=.75ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{headline}{  
+  \leavevmode
+
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+    \begin{columns}[T]
+      \begin{column}{.02\paperwidth}
+      \end{column}
+      \begin{column}{.2\paperwidth}
+        \vskip1cm
+        \begin{center}
+          %\includegraphics[width=.6\linewidth]{logos/i6-hks44}
+		  \includegraphics[width=\linewidth]{UVMLogoSolid3425+k}
+        \end{center}
+            \vskip1.5cm
+      \end{column}
+%      \begin{column}{.675\paperwidth}
+      \begin{column}{.55\paperwidth}
+        \vskip4ex
+        \raggedleft
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+        \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
+        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+      \end{column}
+      \begin{column}{.02\paperwidth}
+      \end{column}
+      \begin{column}{.1\paperwidth}
+        \vskip1cm
+        \begin{center}
+          \includegraphics[scale=.5]{CSC_new1}
+        \end{center}
+        \vskip1.5cm
+      \end{column}
+            \begin{column}{.01\paperwidth}
+      \end{column}
+      \begin{column}{.1\paperwidth}
+        \vskip1cm
+        \begin{center}
+          \includegraphics[width=\linewidth]{VACC_cmyk_logo_new}
+        \end{center}
+        \vskip1.5cm
+      \end{column}
+      \begin{column}{.03\paperwidth}
+      \end{column}
+    \end{columns}
+  \end{beamercolorbox}
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+}
+
+%  \setbeamertemplate{headline}{  
+%    \leavevmode
+%    \begin{beamercolorbox}[sep=0.5cm,wd=.8\paperwidth]{headline}
+%      \usebeamercolor{title in headline}{\raggedleft\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
+%      \usebeamercolor{author in headline}{\raggedleft\color{fg}\large{\insertauthor}\\[1ex]}
+%      \usebeamercolor{institute in headline}{\raggedleft\color{fg}\large{\insertinstitute}\\[1ex]}     
+%    \end{beamercolorbox}%
+%    \begin{beamercolorbox}[wd=.2\paperwidth]{logo in headline}
+%      \centering
+%      \LARGE{LOGO}
+%    \end{beamercolorbox}  
+
+
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+  
+  \leavevmode%
+  \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{author in head/foot}%
+    \texttt{\url{http://www.uvm.edu/~pdodds,~cdanfort}}
+    \hfill
+    \texttt{\{mrfrank,peter.dodds,chris.danforth\}@uvm.edu}
+%    \texttt{chris.danforth@uvm.edu}
+    \vskip1ex
+  \end{beamercolorbox}
+  \vskip0pt%
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Display a grid to help align images ... and it looks nice with this color scheme
+%\beamertemplategridbackground[1cm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<all>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "poster"
+%%% End: 
