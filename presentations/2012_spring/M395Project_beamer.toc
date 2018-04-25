@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {3}{General Rogue-Wave Solutions of the NLS}{20}{0}{2}
+\beamer@subsectionintoc {3}{1}{Deriving Bilinear Form}{24}{0}{2}
+\beamer@subsectionintoc {3}{2}{Gram determinant solutions to 2+1 dimensional bilinear equations}{28}{0}{2}
+\beamer@subsectionintoc {3}{3}{Algebraic solutions satisfying reduction condition}{33}{0}{2}
+\beamer@subsectionintoc {3}{4}{Complex Conjugacy and Simplification of Rogue-Wave Solutions}{35}{0}{2}
+\beamer@sectionintoc {4}{Numerical Simulations of Rogue-Wave Solutions}{36}{0}{3}

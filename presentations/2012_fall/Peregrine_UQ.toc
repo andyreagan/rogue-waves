@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {2}{Introduction: Rogue Waves}{3}{0}{1}
+\beamer@sectionintoc {3}{Introduction: Uncertainty Quantification}{20}{0}{2}
+\beamer@sectionintoc {4}{Peregrine soliton formation under uncertain IC}{24}{0}{3}
