@@ -1,4 +1,5 @@
-*.fig
-*.png
-*.mat
+# *.fig
+# *.png
+# *.mat
+data/
 .DS_Store

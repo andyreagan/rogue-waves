@@ -1,0 +1,44 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  7 SEP 2012 14:58
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**beamerthemeI6pd2.sty
+(./beamerthemeI6pd2.sty
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `beamerthemeI6pd2'.
+
+Package: beamerthemeI6pd2 
+(./tangocolors.sty
+./tangocolors.sty:9: Undefined control sequence.
+l.9 \definecolor
+                {tabutter}{rgb}{0.98824, 0.91373, 0.30980}		% #fce94f
+? 
+./tangocolors.sty:9: Emergency stop.
+l.9 \definecolor
+                {tabutter}{rgb}{0.98824, 0.91373, 0.30980}		% #fce94f
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 14 strings out of 493633
+ 288 string characters out of 3143378
+ 49245 words of memory out of 3000000
+ 3410 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 9i,0n,7p,123b,10s stack positions out of 5000i,500n,10000p,200000b,50000s
+./tangocolors.sty:9:  ==> Fatal error occurred, no output PDF file produced!
